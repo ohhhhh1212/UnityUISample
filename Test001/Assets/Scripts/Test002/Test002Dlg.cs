@@ -55,7 +55,7 @@ public class Test002Dlg : MonoBehaviour
         string rank = "";
         switch (s)
         {
-            case >= 90:
+            case int when s >= 90:
                 rank = "A";
                 break;
             case >= 80:
@@ -67,7 +67,7 @@ public class Test002Dlg : MonoBehaviour
             case >= 60:
                 rank = "D";
                 break;
-            case < 60:
+            default:
                 rank = "F";
                 break;
         }
