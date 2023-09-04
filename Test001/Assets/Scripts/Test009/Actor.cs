@@ -12,4 +12,15 @@ public class Actor
     {
         hp -= damage;
     }
+
+    public void Heal(int h)
+    {
+        hp += h;
+    }
+
+    public Actor(int h, int a)
+    {
+        hp = h;
+        attack = a;
+    }
 }
